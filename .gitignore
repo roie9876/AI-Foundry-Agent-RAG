@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Azure
+*.azureauth
+.azure/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Security - exclude all shell scripts that might contain secrets
+*.sh
+setup-*.sh
+find-*.sh
+verify-*.sh
+check-*.sh
+debug-*.sh
+grant-*.sh
+enable-*.sh
+
+# Exclude old app files with hardcoded values
+app.py
+app_old.py
+*-old.py
+*-backup.py
+
+# Test files that might contain credentials
+test_*.py
+*_test.py
+
+# Any JSON files that might contain secrets
+*.json
+!package.json
+!package-lock.json

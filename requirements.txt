@@ -1,0 +1,18 @@
+# IMPORTANT: use --pre when installing this file
+#   pip install --pre -r requirements.txt
+# because the Azure AI SDKs below are still in public-preview.
+
+streamlit>=1.29.0
+watchdog>=4.0.0           # fast reload (optional)
+
+# Azure preview SDKs
+azure-identity>=1.16.0
+azure-ai-nspkg>=1.0.0
+azure-ai-resources==1.0.0b5     # contains AIProjectClient
+azure-ai-projects==1.0.0b11     # legacy fallback
+azure-ai-agents==1.1.0b3        # contains AgentsClient
+azure-search-documents>=11.4.0
+azure-mgmt-resource>=23.0.0
+azure-mgmt-cognitiveservices>=13.5.0
+
+python-dotenv>=1.0.0
